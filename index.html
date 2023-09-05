@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Arapey:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico" />
+    <title>JPFrame School Wide Progressive Discipline Model</title>
+  </head>
+  <body>
+    <div class="top-container">
+      <div class="nav-bar">
+        <div class="author-name">JP Frame</div>
+        <div class="nav-bar-links">
+          <ul>
+            <li><a href="#about-contact-container">About</a></li>
+            <li><a href="#media-container-podcast">Media</a></li>
+            <li><a href="#about-contact-container">Contact</a></li>
+            <li><a href="#resources">Resources</a></li>
+          </ul>
+        </div>
+        <!-- End of nav bar links class-->
+      </div>
+      <!-- End of nav-bar class-->
+
+      <!--Set Up images, Center image will be in front while the other two images are slighlty behind -->
+      <div class="images-container">
+        <img
+          class="left-image"
+          src="images/Book-Purpose.png"
+          alt="Book Purpose"
+        />
+        <img
+          class="center-image"
+          src="images/Book-Cover.png"
+          alt="Book Cover"
+        />
+
+        <img
+          class="right-image"
+          src="images/Book-Graphs.png"
+          alt="Book Graphs"
+        />
+      </div>
+      <div class="purchasing-link">
+        <p class="link">
+          <em
+            >Purchase from
+            <a
+              class="underline-decoration"
+              href="https://www.amazon.com/School-Wide-Progressive-Discipline-Model-Frame/dp/1082437085/ref=sr_1_1?crid=34XUU3ZMOC6Q2&keywords=school+wide+progressive+discipline&qid=1691459399&sprefix=the+school+wide+prog%2Caps%2C194&sr=8-1"
+              >Amazon</a
+            ></em
+          >
+        </p>
+      </div>
+    </div>
+    <!-- End of top container class-->
+    <h3 class="download-prompt">
+      Download an introductory excerpt from my book.
+    </h3>
+    <div class="download-form">
+      <button id="excerpt-btn">Download Free Exceprt</button>
+      <script>
+        let clickCount = 0;
+        document
+          .getElementById("excerpt-btn")
+          .addEventListener("click", function () {
+            clickCount++;
+            console.log("File Downloaded " + clickCount + " time(s)");
+            const link = document.createElement("a");
+            link.href = "Book-Excerpt.pdf";
+            link.download = "Book-Excerpt.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+      </script>
+    </div>
+
+    <!--Testimonial Container-->
+    <div class="testimonial-container">
+      <div class="topic">
+        <h3 class="heading">Clarity and Consitency</h3>
+        <p class="quote">
+          <em
+            >Our school-wide progressive discipline<br />
+            model brought clarity and consistency<br />
+            to the student-management process<br />
+            [and] trained students to make<br />
+            personal choices based on known<br />
+            expectations and experiences."<br />
+          </em>
+        </p>
+        <h4 class="writer"><b>-David Radford</b></h4>
+        <p class="title">Principal, Kent-Meridian High School</p>
+      </div>
+      <div class="topic">
+        <h3 class="heading">Practical and Logical</h3>
+        <p class="quote">
+          <em
+            >"This is very practical and logical. [I]<br />
+            have great respect for the system<br />
+            you have created. Teachers who have<br />
+            students for 50 or 90 minutes<br />
+            should be encouraged to use a judicious<br />
+            use of a progressive discipline system."<br />
+          </em>
+        </p>
+        <h4 class="writer">-<b>Dr. Randy Sprick</b></h4>
+        <p class="title">Director of Safe and Civil Schools</p>
+      </div>
+      <div class="topic">
+        <h3 class="heading">Fosters Mutual Respect</h3>
+        <p class="quote">
+          <em
+            >"The message is clear, fair, and<br />
+            fosters mutual respect. Teachers<br />
+            are able to minimize attention and<br />
+            time given to addressing behavioral<br />
+            issues and maintain instructional<br />
+            momentum."<br />
+          </em>
+        </p>
+        <h4 class="writer"><b>-Vicky Barkley</b></h4>
+        <p class="title">ELL-ELA Teacher</p>
+      </div>
+    </div>
+    <div id="about-contact-container">
+      <div class="about">
+        <h3><b>About</b></h3>
+        <p class="explanation">
+          As an educator, JP Frame has dedicated 25 years<br />
+          to the development of students at the<br />
+          elementary, middle school, and high school<br />
+          levels. His work with children began when<br />
+          he started coaching at Chet Waggoner Little<br />
+          League in South Bend, IN which led to his<br />
+          pursuit of an Elementary Education Degree<br />
+          from Indiana University.
+        </p>
+        <p class="explanation">
+          He and his wife have 3 children and reside<br />
+          in Kent, WA where he is currently employed<br />
+          as a guidance counselor at one of the local<br />
+          high schools.
+        </p>
+      </div>
+      <div class="vertical-line"></div>
+      <div class="contact">
+        <h3 class="get-in-touch">Get in Touch</h3>
+        <p>
+          Whether you have questions about my program,<br />
+          are looking to collaborate, or just want to say hello,<br />
+          please fill out this form and someone will be in touch!
+        </p>
+        <form
+          action="mailto:jframe@jpframe.com"
+          method="post"
+          enctype="text/plain"
+          class="email-form"
+        >
+          Name:<br />
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name:"
+            size="30"
+            required
+          /><br />
+          Email:<br />
+          <input
+            type="text"
+            name="email"
+            placeholder="Your Email:"
+            size="50"
+            required
+          />
+          <br />
+          Message:<br />
+          <textarea
+            name="message"
+            rows="8"
+            cols="50"
+            placeholder="Questions, Comments, or Concerns!"
+            required
+          ></textarea>
+          <br />
+          <input class="submit-btn" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <div id="media-container-podcast">
+      <h2 class="media-header">Media</h2>
+      <h4 class="podcast-title">Principal Center Radio Podcast</h4>
+      <img
+        src="images/Podcast-Img.png"
+        class="logo-photo"
+        alt="Principal Radio Center Logo"
+      />
+      <audio controls>
+        <source
+          src="JP-Frame-The-School-Wide-Progressive-Discipline-Model.mp3"
+          type="audio/mpeg"
+        />
+      </audio>
+      <hr />
+      <h3 class="article-title">Washington Principal Spring 2015 Article</h3>
+      <a
+        href="https://awsp.org/docs/default-source/informed-principal-documents/full_spring_2015_issue.pdf?sfvrsn=2"
+        class="principal-article"
+      >
+        Implementing a School Wide Progressive Discipline Mode
+      </a>
+    </div>
+    <div id="resources">
+      <h4 class="resources-links">Resources</h4>
+      <h4>
+        <a class="resources-links" href="https://www.principalcenter.com/pd/">
+          <em>Evidence Driven Progressive Discipline</em>
+        </a>
+      </h4>
+      <h4>
+        <a
+          class="resources-links"
+          href="https://www.principalcenter.com/what-is-progressive-discipline-an-overview-for-school-leaders/"
+        >
+          <em
+            >What is Progressive Discipline? An Overview for School Leaders</em
+          >
+        </a>
+      </h4>
+    </div>
+    <div class="about-jp-container">
+      <h3>About JP Frame</h3>
+      <p>
+        Over the years, JP Frame has earned several educational awards<br />
+        which include NSDAR History Teacher of the Year, Washington<br />
+        State PTSA Outstanding Educator Award, and is a Japan Fulbright<br />
+        Memorial Fund scholarship recipient. He continues to work as a<br />
+        Guidance Counselor at Kent-Meridian High School in Kent, WA.
+      </p>
+    </div>
+  </body>
+</html>
