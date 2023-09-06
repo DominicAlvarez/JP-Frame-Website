@@ -22,6 +22,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-right: 50px;
 }
 .nav-bar-links li {
   display: inline-block;
@@ -40,15 +41,15 @@ body {
   padding-top: 15vh;
 }
 .center-image {
-  max-width: 25%;
+  max-width: 20%;
   position: absolute;
 }
 .left-image {
-  max-width: 23.5%;
-  padding-right: 30vh;
+  max-width: 17.5%;
+  padding-right: 20vh;
 }
 .right-image {
-  max-width: 23.5%;
+  max-width: 17.5%;
   padding-left: 0vh;
 }
 .left-image,
@@ -58,14 +59,13 @@ body {
 .purchasing-link {
   font-family: "Abhaya Libre", serif;
   font-size: 22.8px;
-  color: #737071;
   display: flex;
   justify-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.underline-decoration {
-  text-decoration: underline;
+.link {
+  color: #737071;
 }
 .download-prompt {
   font-family: "Abhaya Libre", serif;
@@ -77,8 +77,8 @@ body {
   background: #d3c743;
   border: 2px solid #ebe178;
 }
-#excerpt-btn::hover {
-  cursor: zoom-in;
+#excerpt-btn:hover {
+  cursor: pointer;
 }
 .purchasing-link,
 .download-form,
@@ -93,15 +93,21 @@ body {
   text-align: center;
 }
 .heading {
-  font-size: 28px;
+  font-size: 32px;
   text-decoration: underline;
+  color: #2f3644;
 }
 .quote {
   font-size: 24px;
+  color: #2f3644;
 }
-.writer,
+.writer {
+  font-size: 29px;
+  color: #2f3644;
+}
 .title {
   font-size: 25.7px;
+  color: #2f3644;
 }
 #about-contact-container {
   display: flex;
@@ -141,7 +147,7 @@ body {
 }
 .contact h3 {
   font-family: "Abhaya Libre", serif;
-  font-size: 26px;
+  font-size: 31px;
   padding-right: 15vh;
   color: #2f3644;
 }
@@ -204,6 +210,7 @@ textarea[name="message"] {
 .logo-photo {
   max-width: 15%;
 }
+
 hr {
   width: 50%;
   background-color: #ddeaf0;
@@ -216,32 +223,41 @@ hr {
   font-size: 36px;
   color: #2f3644;
 }
-#resources {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 20vh;
+.principal-article {
+  color: #1b567b;
 }
-.resources-links {
-  font-family: "Abhaya Libre", serif;
-  font-size: 36px;
-  color: #2f3644;
-  text-decoration: underline;
-}
-.about-jp-container {
+#about-jp-resources {
   background-color: #c6dae4;
-  position: relative;
-  padding-top: 40px;
-  padding-left: 15vh;
-  height: 35vh;
+  display: flex;
+  justify-content: space-around;
 }
-.about-jp-container h3 {
+.about-jp {
+  padding-right: 10vh;
+}
+.about-jp-title {
   font-family: "Abhaya Libre", serif;
   font-size: 30px;
   color: #2f3644;
 }
-.about-jp-container p {
+.about-jp-quote {
   font-family: "Abhaya Libre", serif;
   font-size: 22px;
+  color: #2f3644;
+}
+.resources {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.resource-text {
+  font-family: "Abhaya Libre", serif;
+  font-size: 34px;
+  color: #2f3644;
+}
+.resource-links {
+  font-family: "Abhaya Libre", serif;
+  font-size: 24px;
+}
+.link-resource {
   color: #2f3644;
 }
