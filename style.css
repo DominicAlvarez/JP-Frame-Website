@@ -61,7 +61,7 @@ body {
   font-size: 22.8px;
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 5vh;
   padding-bottom: 15px;
 }
 .link {
